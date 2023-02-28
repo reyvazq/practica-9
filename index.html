@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    color: #ffffff;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color:#A30727 ;
+    color: #ffffff;
+    padding: 15px;
+    position: relative;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+   
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #EA614C;
+    color: #000080;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+li a{
+    
+    display: block;
+    
+    
+    text-decoration: none;
+
+}
+.menu li:hover {
+    background-color: #D2FFA5;
+}
+.aside {
+    width: 300px;
+    height: 200px;
+    background-size: 300px 200px;
+    background-image: url(Gato2.jpg);
+}
+.footer {
+    background-color: #A30727;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+
+}
+body{
+  background-color: #3E3E9B;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+.aside{
+    background-image: url(Gato.jpg);
+    background-color: #EA614C;
+}
+    [class*="col-"] {
+        width: 100%;
+        
+    }
+}
+.vid{
+    position: relative;
+  width: 250px;
+  height: 180px;
+  aspect-ratio: 250px/180px;
+}
+.iframe{
+  width: 250px;
+  height: 180px;
+ }  
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Unidad 2</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <li><a href="https://reyvazq.github.io/practica1/index.html">Practica 1</a></li>
+    <li><a href="https://reyvazq.github.io/practica2/">Practica 2</a></li>
+    <li><a href="https://reyvazq.github.io/practica3/">Practica 3</a></li>
+    <li><a href="https://reyvazq.github.io/practican4/">Practica 4</a></li>
+    <li><a href="https://reyvazq.github.io/practica5/">Practica 5</a></li>
+    <li><a href="https://reyvazq.github.io/practica6/">Practica 6</a></li>
+    <li><a href="https://reyvazq.github.io/Practica7/">Practica 7</a></li>
+    <li><a href="https://reyvazq.github.io/practica8/">Practica 8</a></li>
+  </ul>
+</div>
+
+<div class="col-6">
+  <center><video class="vid" src="Video.mp4"controls></video></center>
+  <center><iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2019.6811231146066!2d-81.34077154051653!3d28.80265011545002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sus!4v1676918121751!5m2!1ses-419!2sus"  style="border: 0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+  
+  <br><h2>Datos personales</h2>
+      <ul>
+          <li>Nombre completo:&nbsp;<b>Rey David V&aacute;zquez Ju&aacute;rez</b> </li>
+          <li>Fecha de nacimiento:&nbsp;<b>14/01/2002</b></li>
+          <li>Lugar de nacimiento:&nbsp;<b>C&oacute;rdoba</b></li><br>
+      </ul>
+      <h2>Formaci&oacute;n acad&eacute;mica</h2><br>
+      <ul>
+          <li>2008-2014:&nbsp;<b>Profr. Antonio Quintana</b></li>
+          <li>2014-2017:&nbsp;<b>E.S.B.A.O</b></li>
+          <li>2017-2020:&nbsp;<b>Cbtis 47</b></li>
+          <li>2020-2025:&nbsp;<b>Instituto Tecnol&oacute;gico de Orizaba</b></li><br>
+      </ul>
+      <h2>Experencia laboral</h2><br>
+      <ul>
+          <li>2025-2030:&nbsp;<b>Microsoft</b></li>
+          <li>2031-2033:&nbsp;<b>Apple</b></li>
+          <li>2035-2045:&nbsp;<b>Amazon</b></li>
+      </ul>
+    
+</div>
+
+<div class="col-3 right">
+  <div class="aside">
+    
+</div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Cambiar el tama&ntilde;o de la ventana del navegador para ver c&oacute;mo responde el contenido al redimensionamiento.</p>
+</div>
+
+</body>
+</html>
